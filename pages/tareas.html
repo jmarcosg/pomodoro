@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pomodoro</title>
+
+    <!-- icons -->
+    <link rel="icon" type="image/png" href="../assets/img/pomodoroIcon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/kanban.css">
+
+    <!-- css animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <header>
+            <a href="#" class="logo">Pomodoro</a>
+
+            <div class="header-right">
+                <a href="../index.html">Inicio</a>
+                <a href="#" class="active">Tareas</a>
+                <a href="../pages/eventos.html">Eventos</a>
+                <a href="../pages/info.html">Información</a>
+                <a href="../pages/otrasTecnicas.html">Más técnicas</a>
+                <a href="../pages/contacto.html">Contacto</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="mainContainer">
+        <main id="app">
+            <section id="board">
+                <div id="add-task-form">
+                    <input id="task-value" placeholder="Agrega una idea o tarea">
+                    <button id="add-task">+</button>
+                </div>
+            </section>
+
+            <section id="columns">
+                <div class="column dropzone">
+                    <h3 class="column-title">Ideas</h3>
+                    <ul class="tasks" id="tasks-added">
+                        <!-- <li class="task-fill" draggable="true">
+                            <div class="task-content"></div>
+                            <div class="trash">X</div>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="column dropzone">
+                    <h3 class="column-title">Por hacer</h3>
+                </div>
+
+                <div class="column dropzone">
+                    <h3 class="column-title">Haciendo</h3>
+                </div>
+
+                <div class="column dropzone">
+                    <h3 class="column-title">Hecho</h3>
+                </div>
+            </section>
+        </main>
+
+        <script src="../assets/js/kanban.js"></script>
+    </div>
+
+    <footer>
+        <i class="fab fa-github fa-lg"><a href="https://github.com/jmarcosg">&nbsp;Github</a></i>
+        <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>Copyright 2021 - Todos los derechos reservados</span> -->
+    </footer>
+</body>
+
+</html>

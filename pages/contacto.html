@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pomodoro</title>
+
+    <!-- icons -->
+    <link rel="icon" type="image/png" href="../assets/img/pomodoroIcon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/infoBlog.css">
+    <link rel="stylesheet" href="../assets/styles/form.css">
+
+    <script src="../assets/js/formValidation.js"></script>
+
+    <!-- css animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <header>
+            <a href="#" class="logo">Pomodoro</a>
+
+            <div class="header-right">
+                <a href="../index.html">Inicio</a>
+                <a href="../pages/tareas.html">Tareas</a>
+                <a href="../pages/eventos.html">Eventos</a>
+                <a href="../pages/info.html">Información</a>
+                <a href="../pages/otrasTecnicas.html">Más técnicas</a>
+                <a href="#" class="active">Contacto</a>
+            </div>
+        </header>
+    </div>
+
+    <div class="mainContainer">
+        <div class="info-blog">
+            <h3>¿Se te ocurre alguna idea para agregar a éste proyecto?</h3>
+
+            <h3>¿Te gustaría participar?</h3>
+
+            <div class="contactForm-container">
+                <div class="contact-form">
+                    <h3>¡Contactame!</h3>
+
+                    <form id="form">
+                        <p>
+                            <label>Nombre</label>
+                            <input type="text" name="userName" id="userName">
+                        </p>
+
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="userEmail" id="userEmail">
+                        </p>
+
+                        <p>
+                            <label>Red social:
+                                <select id="socialMediaSelection" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="twitter">Twitter</option>
+                                    <option value="instagram">Instagram</option>
+                                    <option value="other">Otra</option>
+                                </select>
+                            </label>
+                            <input type="text" name="userSocialMedia" id="userSocialMedia">
+                        </p>
+
+                        <p>
+                            <label>Motivo</label>
+                            <input type="text" name="userAffair" id="userAffair">
+                        </p>
+
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="userMessage" id="userMessage" rows="3"></textarea>
+                        </p>
+
+                        <p class="block">
+                            <button type="submit" id="submitButton" onclick="formCheck()">
+                                Enviar
+                            </button>
+                        </p>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h4>Podés encontrarme acá</h4>
+                    <ul>
+                        <li><i class="fab fa-github"><a href="https://github.com/jmarcosg">&nbsp;Github</a></i></li>
+                        <li><i class="fab fa-instagram"><a href="https://instagram.com/jmarcosg.dev">&nbsp;Instagram</a></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <i class="fab fa-github fa-lg"><a href="https://github.com/jmarcosg">&nbsp;Github</a></i>
+    </footer>
+
+</body>
+
+</html>
